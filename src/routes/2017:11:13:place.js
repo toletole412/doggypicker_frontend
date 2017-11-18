@@ -14,7 +14,7 @@ export default class content extends React.Component {
                   <div class="header_profile">
                     <a href="/profile">
                       <img class="header_picture" src="http://imagizer.imageshack.us/v2/280x200q90/922/OnNMZB.jpg"
-                      alt="toretore's Picture" />
+                       alt="toretore's Picture" />
                     </a>
                   </div>
                   <div class="header_titles">
@@ -78,11 +78,29 @@ export default class content extends React.Component {
               </div>
             </article>
             <div class="post_attachment">
-              <div id="disqus_thread">
-                /*웹사이트 계정 판 다음에 삽입 */
-              </div>
+            <div id="disqus_thread"></div>
+              <script>
+
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://www-torevelope-com.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
           </div>
+            <script id="dsq-count-scr" src="//www-torevelope-com.disqus.com/count.js" async></script>
         </section>
       </div>
     )

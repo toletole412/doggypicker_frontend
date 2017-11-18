@@ -11,9 +11,9 @@ export default class Home extends React.Component {
           <Sidebar pageWrapId={"page-wrap"}
                    outerContainerId={"outer-container"} />
           <main id="page-wrap">
-          
+
             <h1>Welcome!</h1>
-            <img src="https://www.seymourcentre.com/assets/Seymour-ideas940x528.jpg" />
+            <img src="http://imagizer.imageshack.us/v2/280x200q90/922/mVDrPl.jpg" />
           </main>
         </div>
     );
