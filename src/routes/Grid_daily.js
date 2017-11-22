@@ -13,11 +13,6 @@ export default class Grid extends React.Component {
   render() {
     return (
       <div>
-        <ResponsiveReactGridLayout className="layout"
-          breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
-          cols={{lg: 3, md: 10, sm: 6, xs: 4, xxs: 2}}
-          draggableCancel=".no-drag">
-
           <div style={{backgroundColor: "#f9f4f7", overflow: "scroll", color: 'black'}}
                  key={"b"}
                  _grid={{i: 'b',
@@ -117,7 +112,6 @@ export default class Grid extends React.Component {
           </div>
 
         </div>
-      </ResponsiveReactGridLayout>
     </div>
     );
   }

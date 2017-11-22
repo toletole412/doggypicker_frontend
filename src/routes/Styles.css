@@ -254,6 +254,7 @@ home {
     line-height: 2.25rem;
 }
 
+
 .clear {
     clear: both;
 }
@@ -512,6 +513,9 @@ i, cite, em, var, address, dfn {
     position: relative;
 }
 
+.site_title {
+    font-size: 2rem;
+}
 .contents h2 {
     font-size: 1.875rem;
 }
@@ -560,4 +564,30 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: -.25rem;
     content: ',';
+}
+
+.post_attachment {
+    background: #f2f7f5;
+    border-top: 1px solid #e7e7e7;
+    padding: 60px 160px 140px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+figure {
+    display: inline-block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+figcaption {
+    display: block;
+    text-align: center;
 }

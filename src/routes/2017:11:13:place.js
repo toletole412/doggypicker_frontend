@@ -1,12 +1,18 @@
 import React from 'react';
 import './Styles.css';
+import ReactDisqusComments from 'react-disqus-comments';
+
 
 export default class content extends React.Component {
+
+  handleNewComment (comment) {
+		console.log(comment.text);
+	}
 
   render() {
     return (
       <div class="wrapper">
-        <section class="post">
+        <div class="post">
           <div class="post_header">
             <header class="header">
               <div class="header_inner clear">
@@ -29,7 +35,7 @@ export default class content extends React.Component {
           <div class="post_body">
             <article class="post_mainland">
               <div class="post_header">
-                <h1 class="post_title">증산동 조용하고 맛있는 카페</h1>
+                <h1 class="post_title">증산동 조용 맛있는 카페</h1>
                 <div class="post_meta">
                   <div class="meta">
                     <div class="meta_inner ellipsis">
@@ -78,30 +84,16 @@ export default class content extends React.Component {
               </div>
             </article>
             <div class="post_attachment">
-            <div id="disqus_thread"></div>
-              <script>
-
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://www-torevelope-com.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <ReactDisqusComments
+              shortname="toretore"
+              identifier="something-unique-12345"
+              title="Example Thread"
+              url="http://torevelope.com/2017/11/13/place/"
+              category_id="123456"
+              onNewComment={this.handleNewComment}/>
             </div>
           </div>
-            <script id="dsq-count-scr" src="//www-torevelope-com.disqus.com/count.js" async></script>
-        </section>
+        </div>
       </div>
     )
   }

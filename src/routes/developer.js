@@ -18,11 +18,11 @@ export default class developer extends React.Component {
             <div id="page" class="hfeed site">
               <header id="masthead" class="site-header" role="banner">
                 <div class="site-branding annCenter">
-                  <p class="site-title">
+                  <h2 class="site-title">
                     <a href="/" rel="home">
                     toretore </a>
-                  </p>
-                  <p class="site-description">developer</p>
+                  </h2>
+                  <p class="site-description"><strong>developer</strong></p>
                 </div>
               </header>
               <div id="content" class="site-content">

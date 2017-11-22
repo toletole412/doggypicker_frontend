@@ -13,7 +13,7 @@ export default class Home extends React.Component {
           <main id="page-wrap">
 
             <h1>Welcome!</h1>
-            <img src="http://imagizer.imageshack.us/v2/280x200q90/922/mVDrPl.jpg" />
+            <img src="https://pixabay.com/get/eb30b20720f3093ed1584d05fb0938c9bd22ffd41cb0104092f5c371a0/candy-2538878_1280.jpg" />
           </main>
         </div>
     );
