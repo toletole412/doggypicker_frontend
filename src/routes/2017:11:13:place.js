@@ -11,6 +11,7 @@ export default class content extends React.Component {
 
   render() {
     return (
+    <main id="page-wrap">
       <div class="wrapper">
         <div class="post">
           <div class="post_header">
@@ -35,7 +36,7 @@ export default class content extends React.Component {
           <div class="post_body">
             <article class="post_mainland">
               <div class="post_header">
-                <h1 class="post_title">증산동 조용 맛있는 카페</h1>
+                <h1 class="post_title">How to impliment Disqus to my Web</h1>
                 <div class="post_meta">
                   <div class="meta">
                     <div class="meta_inner ellipsis">
@@ -95,6 +96,7 @@ export default class content extends React.Component {
           </div>
         </div>
       </div>
+    </main>
     )
   }
 }

@@ -2,9 +2,12 @@
 
 html {
   height: 100%;
+  width: 100%;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,6 +18,42 @@ body {
   margin: 0;
   font-size: 1em;
   font-weight: 300;
+}
+
+body {/* The image used */
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    background-image: url(http://imagizer.imageshack.us/v2/1024x768q90/924/zEZoqR.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: # 464646;
+}
+
+.desc-wrapper {
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    margin-top: 300px;
+}
+
+.desc-wrapper p {
+    font-size: 2rem;
+}
+
+#outer-container{
+  overflow: hidden;
 }
 
 
@@ -82,9 +121,7 @@ a {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.outer-container{
-  overflow: hidden;
-}
+
 
 @media screen and (max-width: 40em) {
   main {
@@ -377,7 +414,6 @@ main {
     margin: 0 auto;
 }
 
-
 .post_inner {
     position: relative;
 }
@@ -513,9 +549,6 @@ i, cite, em, var, address, dfn {
     position: relative;
 }
 
-.site_title {
-    font-size: 2rem;
-}
 .contents h2 {
     font-size: 1.875rem;
 }

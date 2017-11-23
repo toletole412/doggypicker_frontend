@@ -10,6 +10,7 @@ export default class content3 extends React.Component {
 
   render() {
     return (
+    <main id="page-wrap">
       <div class="wrapper">
         <div class="post">
           <div class="post_header">
@@ -152,6 +153,7 @@ export default class content3 extends React.Component {
           </div>
         </div>
       </div>
+    </main>
     )
   }
 }
