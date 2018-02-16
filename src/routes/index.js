@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-
 import Home from './Home';
 import daily from './daily';
 import developer from './developer';
 import content from './2017:11:13:place';
 import content2 from './2017:11:19:develope.discus';
 import content3 from './2017:11:20:develope';
-
 
 
 export default () => (

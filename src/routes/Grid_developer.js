@@ -12,9 +12,7 @@ export default class Grid2 extends React.Component {
   render() {
     return (
       <div>
-
-
-          <div style={{backgroundColor: "#f9f4f7", overflow: "scroll", color: 'black'}}
+      <div style={{backgroundColor: "#f9f4f7", overflow: "scroll", color: 'black'}}
                  key={"b"}
                  _grid={{i: 'b',
                          x: 1,

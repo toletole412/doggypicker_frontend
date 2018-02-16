@@ -8,7 +8,6 @@ export default class Home extends React.Component {
   render() {
     return (
         <div id="outer-container">
-
           <ul class="cb-slideshow">
             <li>
               <span>dsds</span>

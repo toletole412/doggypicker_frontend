@@ -8,6 +8,7 @@
     "react-bootstrap": "^0.31.5",
     "react-burger-menu": "^2.1.11",
     "react-dom": "^16.0.0",
+    "react-dropzone": "^4.2.7",
     "react-icons": "^2.2.7",
     "react-icons-kit": "^1.0.7",
     "react-placeholder": "^1.0.8",
