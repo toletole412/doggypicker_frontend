@@ -1,13 +1,7 @@
 import React from 'react';
 import './Styles.css';
-import ReactDisqusComments from 'react-disqus-comments';
 
-
-export default class content extends React.Component {
-
-  handleNewComment (comment) {
-		console.log(comment.text);
-	}
+export default class Grid_Match extends React.Component {
 
   render() {
     return (
@@ -26,7 +20,7 @@ export default class content extends React.Component {
                   </div>
                   <div class="header_titles">
                     <a href="/">
-                      <h1 class="header_title">toretore space</h1>
+                      <h1 class="header_title">asdfasdf</h1>
                     </a>
                   </div>
                 </div>
@@ -36,14 +30,14 @@ export default class content extends React.Component {
           <div class="post_body">
             <article class="post_mainland">
               <div class="post_header">
-                <h1 class="post_title">How to impliment Disqus to my Web</h1>
+                <h1 class="post_title">asdfasdfasadf</h1>
                 <div class="post_meta">
                   <div class="meta">
                     <div class="meta_inner ellipsis">
                       <div class="meta_datetime">
                         <i class="fa fa-clock-o" aria-hidden="true">
                         </i>
-                        <time datetime="2017-11-13"> 2017.11.13</time>
+                        <time datetime="2017-11-20"> 2017.11.20</time>
                       </div>
                     </div>
                   </div>
@@ -52,17 +46,46 @@ export default class content extends React.Component {
               <div class="post_contents">
                 <div class="contents">
                   <div class="contents_inner">
-                    <h2 id="증산동-커피생각-위치">
-                      <a href="#증산동-커피생각-위치" class="headerlink"
-                      title="증산동 커피생각 위치">"증산동 커피생각 위치"</a>
+                    <p>
+                      adfasdfasdf
+                    </p>
+                    <img src="https://cdn-images-1.medium.com/max/2000/1*bUtWGJQv8QFXTkLF_WBINA.png" />
+
+                    <h2 id="What is similar">
+                      <a href="#What is similar" class="headerlink"
+                      title="What is similar">What is similar</a>
                     </h2>
                     <p>
-                      커피생각은 증산역 1번 출구 근처에 위치해 있다. 이 근방에서 흔치 않게
-                      3층짜리 건물이기 때문에, 쉽게 찾을 수 있다. 증산역에서 나와 오른쪽으로
-                      고개를 돌려보면, 커피잔이 그려진 큰 건물이 보인다.
+                      adsfasdf
+
+                    </p>
+
+                    <p>
+                      <strong>1. tags</strong>
                     </p>
                     <p>
-                      도보로는 1분이면 가고, 주위에 주차할 곳이 마땅치 않으니 차가 없이 오는 것이 좋다.
+                      When you want to put contents, you should use <br />
+                      <br />
+                      React Native: {'<View>'}, {'<Text>'} <br />
+                      React.js: {'<div>'}, {'<p>'} <br />
+                      <br />
+                      Because React Native doesn't use HTML to render the app.
+                    </p>
+
+                    <h2 id="And..">
+                      <a href="#And.." class="headerlink"
+                      title="And..">And..</a>
+                    </h2>
+                    <p>
+                    React.js installation command is <br />
+                    npm install -g create-react-app <br />
+                    <a href="https://github.com/facebookincubator/create-react-app">https://github.com/facebookincubator/create-react-app</a>
+                    <br />
+                    <br />
+                    React Native installation command is <br />
+                    npm install -g create-react-native-app <br />
+                    <a href="https://facebook.github.io/react-native/docs/getting-started.html">https://facebook.github.io/react-native/docs/getting-started.html</a>
+
                     </p>
                   </div>
                 </div>
@@ -73,10 +96,10 @@ export default class content extends React.Component {
                       </i>
                       <ul class="tags_tag-list">
                         <li class="tags_tag-list-item">
-                          <a class="tags_tag-list-link" href="/tags/Coffee">Coffee</a>
+                          <a class="tags_tag-list-link" href="/tags/React">React, </a>
                         </li>
                         <li class="tags_tag-list-item">
-                          <a class="tags_tag-list-link" href="/tags/Cafe">Cafe</a>
+                          <a class="tags_tag-list-link" href="/tags/disqus">React Native</a>
                         </li>
                       </ul>
                     </div>
@@ -85,13 +108,6 @@ export default class content extends React.Component {
               </div>
             </article>
             <div class="post_attachment">
-            <ReactDisqusComments
-              shortname="toretore"
-              identifier="something-unique-12345"
-              title="Example Thread"
-              url="http://torevelope.com/2017/11/13/place/"
-              category_id="123456"
-              onNewComment={this.handleNewComment}/>
             </div>
           </div>
         </div>

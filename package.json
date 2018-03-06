@@ -16,7 +16,8 @@
     "react-sidebar": "^2.3.2",
     "react-sidenav": "^2.1.2",
     "reactstrap": "^5.0.0-alpha.3",
-    "rn-placeholder": "^1.1.0"
+    "rn-placeholder": "^1.1.0",
+    "superagent": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",

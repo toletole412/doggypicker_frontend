@@ -1,5 +1,6 @@
 import React from 'react';
 import { Responsive, WidthProvider } from 'react-grid-layout';
+import AllDogs from './components/Alldogs'
 import './Styles.css';
 
 
@@ -7,11 +8,13 @@ import './Styles.css';
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 
-export default class Grid2 extends React.Component {
+export default class Grid_AllDogs extends React.Component {
 
   render() {
     return (
+
       <div>
+      <AllDogs />
       <div style={{backgroundColor: "#f9f4f7", overflow: "scroll", color: 'black'}}
                  key={"b"}
                  _grid={{i: 'b',
@@ -32,7 +35,7 @@ export default class Grid2 extends React.Component {
                             <article class="articles_contents">
                               <div class="articles_header">
                                 <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">Differences between React.js and React Native</a> </h1>
+                                  <a href="/2017/11/20/develope/">dddd</a> </h1>
                                   <div class="articles_meta">
                                     <div class="meta">
                                       <div class="meta_inner ellipsis">
@@ -55,7 +58,7 @@ export default class Grid2 extends React.Component {
                             <div class="articles_body">
                               <div class="contents">
                                 <div class="contents_inner">
-                                  <p>Built by Facebook, similar but different in some ways</p>
+                                  <p>asdsad</p>
                                 </div>
                               </div>
                             </div>
@@ -65,7 +68,7 @@ export default class Grid2 extends React.Component {
                             <article class="articles_contents">
                               <div class="articles_header">
                                 <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">Next articleajdf</a> </h1>
+                                  <a href="/2017/11/20/develope/">asdasd</a> </h1>
                                   <div class="articles_meta">
                                     <div class="meta">
                                       <div class="meta_inner ellipsis">
@@ -88,7 +91,7 @@ export default class Grid2 extends React.Component {
                             <div class="articles_body">
                               <div class="contents">
                                 <div class="contents_inner">
-                                  <p>Built by Facebook, similar but different in some ways</p>
+                                  <p>asdasdasd</p>
                                 </div>
                               </div>
                             </div>
@@ -98,7 +101,7 @@ export default class Grid2 extends React.Component {
                             <article class="articles_contents">
                               <div class="articles_header">
                                 <h1 class="articles_title">
-                                  <a href="/2017/11/20/develope/">Differences between React.js and React Native</a> </h1>
+                                  <a href="/2017/11/20/develope/">adasdasd</a> </h1>
                                   <div class="articles_meta">
                                     <div class="meta">
                                       <div class="meta_inner ellipsis">
@@ -106,6 +109,7 @@ export default class Grid2 extends React.Component {
                                           <i class="fa fa-clock-o" aria-hidden="true">
                                           </i>
                                           <time datetime="2017-11-20">2017.11.20</time>
+
                                       </div>
                                       <div class="meta_categories">
                                         <i class="fa fa-map-marker" aria-hidden="true">
@@ -121,7 +125,7 @@ export default class Grid2 extends React.Component {
                             <div class="articles_body">
                               <div class="contents">
                                 <div class="contents_inner">
-                                  <p>Built by Facebook, similar but different in some ways</p>
+                                  <p>adfadsff</p>
                                 </div>
                               </div>
                             </div>
@@ -131,7 +135,9 @@ export default class Grid2 extends React.Component {
                           <article class="articles_contents">
                             <div class="articles_header">
                               <h1 class="articles_title">
-                                <a href="/2017/11/19/develope.discus/">How to implement Disqus to React Web</a> </h1>
+                                <a href="/2017/11/19/develope.discus/">Hasdfasd
+                                </a> </h1>
+
                                 <div class="articles_meta">
                                   <div class="meta">
                                     <div class="meta_inner ellipsis">
@@ -154,7 +160,7 @@ export default class Grid2 extends React.Component {
                           <div class="articles_body">
                             <div class="contents">
                               <div class="contents_inner">
-                                <p> Introducing 'react-disqus-comments' component and Installation.</p>
+
                               </div>
                             </div>
                           </div>
