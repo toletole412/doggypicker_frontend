@@ -1,39 +1,16 @@
 import request from 'superagent'
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://dog.ceo/api/breeds/image/random'
+const baseUrl = 'http://localhost:4001'
 
-export const THUMB_UP = 'THUMBED_UP_PICTURES'
-export const THUMB_DOWN = 'THUMBED_DOWN_PICTURES'
-export const LOGIN = 'LOGIN_USERS'
-export const MATCH_USERS = 'MATCH_USERS'
-export const TOP_TEN = 'COUNT_THUMBS_UP'
+export const LIKE = 'LIKE'
 
-export const select_picture = (pictureId) => (dispatch) => {
+export const select_dog = (dog) => (dispatch) => {
   request
-    .get(`${baseUrl}/allDogs/${usersId}`)
+    .post(`${baseUrl}/products`)
+    .send(product)
     .then(response => dispatch({
-      type: THUMB_UP,
+      type: ADD_PRODUCT,
       payload: response.body
-      .then(
-        result => {
-          dispatch({
-            type: TOP_TEN,
-            payload: response.body
-        }
-      )
     }))
-    .catch(err => alert(err))
-}
-export const plusOne = (userId) => {
-  return (dispatch, getState) => {
-    const { users } = getState()
-    const user = users.fetch(url)
-      .then(function(response) {
-
-      }
-
-      .catch((error) => {
-        console.error('Something went wrong!', error)
-      })
-  }
 }

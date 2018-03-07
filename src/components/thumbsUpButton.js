@@ -1,17 +1,18 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import '../routes/Styles.css';
 
 
 
-export default class PlusOneButton extends PureComponent {
+class UpButton extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired
   }
   render() {
     return (
-      <button className="PlusOne" onClick={this.props.onClick}>'like!'</button>
+      <button className="thumbsUp" onClick={this.props.onClick}>like</button>
     )
   }
 }
 
-export default PlusOneButtonA
+export default UpButton

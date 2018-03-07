@@ -1,19 +1,18 @@
 import React from 'react';
 import AllDogs from '../components/Alldogs'
-import { fetchRandomDog } from '../actions/showAllDog'
+import AllDogs1 from '../components/Alldogs1'
+import AllDogs2 from '../components/Alldogs2'
+import AllDogs3 from '../components/Alldogs3'
+import AllDogs4 from '../components/Alldogs4'
+import AllDogs5 from '../components/Alldogs5'
+import UpButton from '../components/thumbsUpButton'
+import DownButton from '../components/thumbsDownButton'
+
 import './Styles.css';
 
 
 
 export default class Grid_AllDogs extends React.Component {
-  renderShowRandomDogs = () => {
-    return (
-      <div className="guess">
-        {this.fetchRandomDog()}
-      </div>
-    )
-  }
-
   render() {
     return (
       <div>
@@ -39,6 +38,8 @@ export default class Grid_AllDogs extends React.Component {
                               <div className="contents">
                                 <div className="contents_inner">
                                   <AllDogs />
+                                  <UpButton />
+                                  <DownButton />
                                 </div>
                               </div>
                             </div>
@@ -49,7 +50,7 @@ export default class Grid_AllDogs extends React.Component {
                           <div className="articles_body">
                             <div className="contents">
                               <div className="contents_inner">
-                                <p>asdsad</p>
+                                <AllDogs1 />
                               </div>
                             </div>
                           </div>
@@ -60,7 +61,7 @@ export default class Grid_AllDogs extends React.Component {
                           <div className="articles_body">
                             <div className="contents">
                               <div className="contents_inner">
-                                <p>asdsad</p>
+                                <AllDogs2 />
                               </div>
                             </div>
                           </div>
@@ -71,21 +72,43 @@ export default class Grid_AllDogs extends React.Component {
                           <div className="articles_body">
                             <div className="contents">
                               <div className="contents_inner">
-                                <p>asdsad</p>
+                                <AllDogs3 />
                               </div>
                             </div>
                           </div>
                         </article>
                       </li>
-                      </ul>
-                    </div>
-                  </div>
+                      <li className="articles_item">
+                      <article className="articles_contents">
+                        <div className="articles_body">
+                          <div className="contents">
+                            <div className="contents_inner">
+                              <AllDogs4 />
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li className="articles_item">
+                    <article className="articles_contents">
+                      <div className="articles_body">
+                        <div className="contents">
+                          <div className="contents_inner">
+                            <AllDogs5 />
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-       </div>
-     </div>
-    );
-  }
+        </div>
+      </div>
+   </div>
+ </div>
+);
+}
 }

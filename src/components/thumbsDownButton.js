@@ -1,17 +1,18 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import '../routes/Styles.css';
 
 
 
-export default class MinusOneButton extends PureComponent {
+class DownButton extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired
   }
   render() {
     return (
-      <button className="MinusOne" onClick={this.props.onClick}>'dislike!'</button>
+      <button className="thumbsDown" onClick={this.props.onClick}>dislike</button>
     )
   }
 }
 
-export default MinusOneButton
+export default DownButton
