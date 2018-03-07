@@ -16,7 +16,6 @@ class AllDogs extends React.Component {
   }
 
   render() {
-    const {RandomDog} = this.props
     return (
       <div>
         <h1>ddd</h1>

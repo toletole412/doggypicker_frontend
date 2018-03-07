@@ -1,10 +1,18 @@
 import React from 'react';
 import AllDogs from '../components/Alldogs'
+import { fetchRandomDog } from '../actions/showAllDog'
 import './Styles.css';
 
 
 
 export default class Grid_AllDogs extends React.Component {
+  renderShowRandomDogs = () => {
+    return (
+      <div className="guess">
+        {this.fetchRandomDog()}
+      </div>
+    )
+  }
 
   render() {
     return (
