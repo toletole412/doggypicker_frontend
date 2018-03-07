@@ -3,14 +3,14 @@ import request from 'superagent'
 const dogUrl = 'https://dog.ceo/dog-api/breeds-image-random.php'
 
 
-export const FETCHED_ALL_PRODUCTS = 'FETCHED_ALL_PRODUCTS'
+export const FETCHED_RANDOM_DOG = 'FETCHED_RANDOM_DOGS'
 
-export const fetchAllProducts = () => (dispatch) => { console.log("im here")
+export const fetchRandomDog = () => (dispatch) => { console.log("im here")
   request
     .get(`${dogUrl}`)
     .then(response => dispatch({
-      type: FETCHED_ALL_PRODUCTS,
-      payload: response.body.allDogs
-    })console.log(response.body))
+      type: FETCHED_RANDOM_DOG,
+      payload: response.body.RandomDog
+    }))
     .catch(err => alert(err))
 }

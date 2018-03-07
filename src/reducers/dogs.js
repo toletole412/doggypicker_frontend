@@ -1,11 +1,10 @@
-import {FETCHED_ALL_PRODUCTS} from '../actions/showAllDog'
-
+import {FETCHED_RANDOM_DOG} from '../actions/showAllDog'
 
 
 
 export default function (state = [], action) {
   switch (action.type) {
-    case FETCHED_ALL_PRODUCTS:
+    case FETCHED_RANDOM_DOG:
       return action.payload
 
     default:
