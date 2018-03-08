@@ -15,14 +15,12 @@ class AllDogs extends React.Component {
   }
 
   render() {
-    const {RandomDog} = this.props
-
-
-    console.log(RandomDog)
+    const {dogs} = this.props
 
     return (
       <div>
-        <img className="doggy_picture" src= { RandomDog }
+        <img className="doggy_picture"
+         src= {dogs.url}
          alt="first_dog_picture" />
       </div>
     )
@@ -30,10 +28,15 @@ class AllDogs extends React.Component {
 }
 
 
-const mapStateToProps = function (state) {
-  return {
-    RandomDog: state.dogs[0]
-  }
-}
+const mapStateToProps = ({ dogs }) => ({ dogs })
 
 export default connect(mapStateToProps, { fetchRandomDog })(AllDogs)
+
+AllDogs.defaultProps = {
+  dogs: {
+    id: 1,
+    url: 'http://some.dog.com/wow-such-dog.jpg',
+    createdAt: new Date(),
+    updatedAt: new Date()
+  }
+}

@@ -8,40 +8,12 @@ export default class Grid_Top10 extends React.Component {
     <main id="page-wrap">
       <div className="wrapper">
         <div className="post">
-          <div className="post_header">
-            <header className="header">
               <div className="header_inner clear">
-                <div className="header_brand">
-                  <div className="header_profile">
-                    <a href="/profile">
-                      <img className="header_picture" src="http://imagizer.imageshack.us/v2/280x200q90/922/OnNMZB.jpg"
-                       alt="toretore's Picture" />
-                    </a>
-                  </div>
-                  <div className="header_titles">
-                    <a href="/">
-                      <h1 className="header_title">asdfasdf</h1>
-                    </a>
-                  </div>
-                </div>
+                <h1 className="header_title">Top ten </h1>
               </div>
-            </header>
-          </div>
           <div className="post_body">
             <article className="post_mainland">
-              <div className="post_header">
-                <h1 className="post_title">asdfasdfasadf</h1>
-                <div className="post_meta">
-                  <div className="meta">
-                    <div className="meta_inner ellipsis">
-                      <div className="meta_datetime">
-                        <i className="fa fa-clock-o" aria-hidden="true">
-                        </i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <h1 className="post_title">Top 10 popular dogs...</h1>
               <div className="post_contents">
                 <div className="contents">
                   <div className="contents_inner">

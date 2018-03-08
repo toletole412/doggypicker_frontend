@@ -5,7 +5,7 @@ const dogUrl = 'https://dog.ceo/api/breeds/image/random'
 
 export const FETCHED_RANDOM_DOG = 'FETCHED_RANDOM_DOGS'
 
-export const fetchRandomDog = () => (dispatch) => { console.log("im here")
+export const fetchRandomDog = () => (dispatch) => {
   request
     .get(`${dogUrl}`)
     .then(response => dispatch({

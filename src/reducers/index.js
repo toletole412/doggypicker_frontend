@@ -5,7 +5,6 @@ import dogs from './dogs'
 
 export default {
   matchResult,
-  player,
   top10,
   dogs
 }
