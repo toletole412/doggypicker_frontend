@@ -1,5 +1,8 @@
 import React from 'react';
+import Top10 from '../components/Top10'
 import './Styles.css';
+
+
 
 export default class Grid_Top10 extends React.Component {
 
@@ -20,7 +23,8 @@ export default class Grid_Top10 extends React.Component {
                   <ul className="list_of_doggis">
                      <li>
                        <div className="firstContainer">
-                          <p>Name</p>
+                          <Top10 />
+
                        </div>
                      </li>
                      <li>

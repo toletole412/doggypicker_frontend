@@ -11,7 +11,7 @@ class DislikeButton extends React.Component {
   render() {
     return ( < button
                 className = "thumbsDown"
-                onClick = {this._refreshPage} > Dislike </button> )
+                onClick = {this._refreshPage} > Next </button> )
   }
 }
 

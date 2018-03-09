@@ -1,10 +1,10 @@
-import React, {PureComponent} from 'react'
+import React from 'react'
 import {connect} from 'react-redux'
 import {login} from '../actions/login'
 import LoginForm from '../components/LoginForm'
 import {Redirect} from 'react-router-dom'
 
-class LoginPage extends PureComponent {
+class LoginPage extends React.Component {
 	handleSubmit = (data) => {
 		this.props.login(data.name, data.password)
 	}
@@ -16,8 +16,9 @@ class LoginPage extends PureComponent {
 
 		return (
         <div id="outer-container">
-          <ul class="cb-slideshow">
-            <h1>Login</h1>
+          <ul className="cb-slideshow">
+            <img src="https://imagizer.imageshack.com/v2/1024x768q90/923/l4QlTH.png" />
+            <h1 className="login">Login</h1>
             <LoginForm onSubmit={this.handleSubmit} />
           </ul>
         </div>
