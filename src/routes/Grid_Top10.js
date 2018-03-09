@@ -9,11 +9,11 @@ export default class Grid_Top10 extends React.Component {
       <div className="wrapper">
         <div className="post">
               <div className="header_inner clear">
-                <h1 className="header_title">Top ten </h1>
+                <h1 className="header_title">Top 10 doggy</h1>
               </div>
           <div className="post_body">
             <article className="post_mainland">
-                <h1 className="post_title">Top 10 popular dogs...</h1>
+                <h1 className="post_title">Doggie ranking</h1>
               <div className="post_contents">
                 <div className="contents">
                   <div className="contents_inner">

@@ -31,12 +31,3 @@ class AllDogs extends React.Component {
 const mapStateToProps = ({ dogs }) => ({ dogs })
 
 export default connect(mapStateToProps, { fetchRandomDog })(AllDogs)
-
-AllDogs.defaultProps = {
-  dogs: {
-    id: 1,
-    url: 'http://some.dog.com/wow-such-dog.jpg',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  }
-}

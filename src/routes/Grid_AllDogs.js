@@ -24,7 +24,9 @@ export default class Grid_AllDogs extends React.Component {
             <AllDogs />
             <UpButton />
             <DislikeButton />
-            <a href="/Grid_Match" rel="home">Match</a>
+            <br />
+            <a href="/Grid_Match" rel="Match">Match </a>
+            <a href="/Grid_Top10" rel="Top10">Top10</a>
       </article>
       </div>
     </main>

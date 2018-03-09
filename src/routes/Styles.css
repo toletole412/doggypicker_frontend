@@ -23,34 +23,6 @@ body {
 /* home */
 
 
-@keyframes imageAnimation {
-    100% { opacity: 0; animation-timing-function: ease-in; animation-timing-function: ease-out; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1; }
-    25% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-@keyframes titleAnimation {
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-.no-cssanimations .cb-slideshow li span{
-	opacity: 1;
-}
-
-@media screen and (max-width: 1140px) {
-    .cb-slideshow li div h1 { font-size: 140px }
-}
-
-@media screen and (max-width: 600px) {
-    .cb-slideshow li div h1 { font-size: 80px }
-}
-
 #outer-container{
   overflow: hidden;
 }
@@ -590,7 +562,154 @@ figcaption {
     text-align: center;
 }
 
+.list_of_doggis {           <!--new elements---->
+  max-width: 500px;
+  max-height: 500px;    <!--new-->
+  padding: 60px 0 18px;
+  margin: 0 auto;
+  background-color: #ffeef0;
+  border: 1px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border-color: #e5e5e5;
+}
+.firstContainer {       <!--new elements---->
+  width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #cc00b9;
+  text-align: left;
+  text-indent: 30px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  border-color:  #e5e5e5;
+}
 
+.secondContainer {      <!--new elements---->
+  width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #efb2ea;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);;
+  border-radius: 5px;
+  border-color:  #e5e5e5;
+}
+
+.thirdContainer {        <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #8fe066;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  border-color:  #e5e5e5;
+}
+.fourthContainer {        <!--new elements---->
+  max-width:250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #d632c7;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  border-color:  #e5e5e5;
+}
+
+.fifthContainer {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
+
+.sixthContainer {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
+
+.seventhContainer {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
+
+.eightContainer {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
+
+.ninthContainer {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
+
+.tenthContainer  {         <!--new elements---->
+  max-width: 250px;
+  max-height: 30px;
+  padding: 5px 0 5px;
+  margin: 0 auto;
+  border: 1px;
+  background-color: #007a5b;
+  text-align: left;
+  text-indent: 50px;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  border-color:  #e5e5e5;
+  border-radius: 5px;
+}
 /*button css */
 button.thumbsUp {
   flex: 1;

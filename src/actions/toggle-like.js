@@ -6,9 +6,11 @@ export const TOGGLE_LIKE = 'TOGGLE_LIKE'
 
 
 export const toggleLike = (dog) => (dispatch) => {
+const dogname=dog.url.split("/")[5];
+console.log(dogname)
   request
-    .patch(`${baseUrl}/${1}`)
-    .send({ url: dog.url })
+    .post(`${baseUrl}`)
+    .send({breed: dogname , userId: 5})
     .then((response) => (dispatch) => {
       type: TOGGLE_LIKE
     })
